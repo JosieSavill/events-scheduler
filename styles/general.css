@@ -11,6 +11,47 @@ body {
   
 }
 
+:root{
+  --color1: #ab2f59;
+  --color2: #e5a062;
+  --color3: rgb(171, 47, 89);
+}
+
+body {
+  font-family: Tahoma;
+  margin: 0px;
+  padding: 0px;
+}
+
+.banner {
+  display: flex;
+  flex-direction: row;
+  background-image: url("/assets/event-scheduler.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  justify-content: center;
+  min-height: 100vh;
+  min-width: 100%;
+  z-index: 1;
+}
+
+.background-pic {
+  width: 100%;
+  min-height: 100%;
+  position: fixed;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 .todo-input-grid {
   margin-bottom: 10px;
   align-items: strech;
