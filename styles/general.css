@@ -17,7 +17,7 @@ body {
 .banner {
   display: flex;
   flex-direction: column;
-  background-image: url("/assets/event-scheduler.jpg");
+  background-image: url("./images/event-scheduler.jpg");
   background-attachment: fixed;
   background-size: cover;
   justify-content: center;
