@@ -53,7 +53,8 @@
 
 .js-todo-list {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   
 }
@@ -61,10 +62,11 @@
 
 
 .box{
-  border:solid thin red;
+  
   display: flex;
   flex-direction: column;
   width: 30%;
+  z-index: 3;
 }
 
 .search {
