@@ -1,0 +1,18 @@
+:root{
+  --color1: #ab2f59;
+  --color2: #e5a062;
+  --color3: rgb(171, 47, 89);
+}
+
+
+.heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 30px;
+  
+}
+
+p {
+
+}

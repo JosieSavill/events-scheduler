@@ -2,20 +2,14 @@ body {
   font-family: Arial;
 }
 
-.todo-grid, 
-.todo-input-grid {
-  display: grid;
-  grid-template-columns: 200px 150px 100px;
-  column-gap: 10px;
-  row-gap: 10px;
-  
-}
+
 
 :root{
   --color1: #ab2f59;
   --color2: #e5a062;
   --color3: rgb(171, 47, 89);
 }
+
 
 body {
   font-family: Tahoma;
@@ -25,7 +19,7 @@ body {
 
 .banner {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   background-image: url("/assets/event-scheduler.jpg");
   background-attachment: fixed;
   background-size: cover;
