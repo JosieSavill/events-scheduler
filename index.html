@@ -6,7 +6,7 @@
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Happy+Monkey&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/heading.css">
     <link rel="stylesheet" href="styles/grid.css">
@@ -15,16 +15,28 @@
   <body>
     
     <div class="banner">
+      
+      <div class="js-todo-list todo-grid">
+       <!-- box goes in here-->
+      </div>
       <div class="heading">
-        <p>Events Scheduler</p>
+        <h1>Events Scheduler</h1>
       </div>
       <div class="todo-input-grid">
-        <input placeholder="Todo name" class="js-name-input name-input">
+      
+
+        <div class="search">
+          <div class="search-bar-container">
+            <input  placeholder="Todo name" class="js-name-input name-input search-bar"  type="text">
+            
+            <button class="add-todo-button js-add-todo-button">Add</button>
+          </div>
+        </div>
+        
         <input type="date" class="js-due-date-input due-date-input">
-        <button class="add-todo-button js-add-todo-button">Add</button>
+        
       </div>
   
-      <div class="js-todo-list todo-grid">text</div>
     </div>
 
     
