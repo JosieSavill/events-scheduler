@@ -17,13 +17,13 @@ body {
 .banner {
   display: flex;
   flex-direction: column;
-  background-image: url("images/event-scheduler.jpg");
+  background-image: url("./images/event-scheduler.jpg");
   background-attachment: fixed;
   background-size: cover;
   justify-content: center;
   min-height: 100vh;
   min-width: 100%;
-  z-index: 1;
+  /* z-index: 1; */
 }
 
 .background-pic {
