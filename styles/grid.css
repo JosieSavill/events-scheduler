@@ -38,6 +38,8 @@
   border: none;
   font-size: 30px;
   cursor: pointer;
+  padding: 10px;
+  
   
 }
 
@@ -73,7 +75,7 @@
   display: flex;
   flex-direction: row;
   width: 100%;
-  max-width: 600px;
+  max-width: 800px;
 }
 
 .search-bar-container {
@@ -105,7 +107,7 @@
 
 .search-bar::placeholder {
   font-family: Roboto, Arial;
-  font-size: 12px;
+  font-size: 20px;
 }
 
 .search-button {
@@ -114,11 +116,29 @@
   border: none;
   border-radius: 0 20px 20px 0;
   border: none;
+  padding: 5%;
 }
 
 .search-icon {
   height: auto;
   width: 100%;
+}
+
+.date,
+.js-due-date-input, 
+.due-date-input {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-self: center;
+    border: solid rgba(53, 6, 6, 0.856);
+    border-radius: 20px;
+    border-width: 3px;
+    padding-top: 0;
+    height: auto;
+    width: 100%;
+    column-gap: 0;
 }
 
 
