@@ -20,8 +20,10 @@ function renderTodoList() {
       <div class="box">
         <div>${name}</div>
         <div>${dueDate}</div> 
-        <button class= "delete-todo-button js-delete-todo-button">Delete</button>
-      </div>`;
+   
+          <button class= "delete-todo-button js-delete-todo-button">Remove</button>
+
+          </div>`;
       todoListHTML += html;
   });
   
@@ -45,6 +47,19 @@ document.querySelector('.js-add-todo-button')
   .addEventListener('click', () => {
     addTodo();
   });
+
+  
+document.querySelector(".name-input")
+.addEventListener("keydown", (e)=>{
+  if(e.keyCode === 13) {
+    addTodo();
+  } //enter key
+})
+
+document.querySelector('.js-due-date-input')
+.addEventListener("change", (e)=>{
+  e.target.style.color = "black";
+})
 
 function addTodo() {
 
