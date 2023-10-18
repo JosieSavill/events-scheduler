@@ -6,8 +6,10 @@
 <br>
 <br>
 
+[Link Here](https://josiesavill.github.io/events-scheduler/)  
 
 
 ![Desktop Img]("../../styles/images/event-desktop.png) 
 
-[Link Here](https://josiesavill.github.io/events-scheduler/)  
+![Mobile View Img]("../../styles/images/event-mobile.png) 
+
