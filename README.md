@@ -8,6 +8,6 @@
 
 
 
-![Desktop Img]("../../styles/images/readme-event-scheduler.jpg) 
+![Desktop Img]("../../styles/images/event-desktop.png) 
 
 [Link Here](https://josiesavill.github.io/events-scheduler/)  
