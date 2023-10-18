@@ -22,6 +22,8 @@ h1{
   justify-content: center;
   font-family: "Lato";
   font-size: 80px;
+  color: white;
+  text-shadow: 5px 5px 5px rgba(0,0,0,.5);
   z-index: 2;
 }
 

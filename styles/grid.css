@@ -89,7 +89,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-self: center;
-  border: solid rgba(53, 6, 6, 0.856);
+  border: solid rgb(49, 47, 47);
   border-radius: 20px;
   border-width: 3px;
   padding-top: 0;
@@ -140,7 +140,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-self: center;
-    border: solid rgba(53, 6, 6, 0.856);
+    border: solid rgb(49, 47, 47);
     border-radius: 20px;
     border-width: 3px;
     padding-top: 0;
