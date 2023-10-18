@@ -101,6 +101,13 @@
   
 }
 
+@media (max-width: 600px) {
+  .search-bar-container {
+    height: auto;
+    width: 99%;
+  }
+}
+
 .search-bar {
   flex: 1;
   height: auto;
@@ -109,8 +116,6 @@
   border-radius: 20px 0 0 20px;
   border: none;
   width: 0;
- 
-  
 }
 
 .search-bar::placeholder {
@@ -164,6 +169,15 @@ input[type="date"] {
   padding: 10px;
   border-radius: 10px;
   box-shadow: 5px 5px 5px rgba(0,0,0,.5);
+}
+
+@media (max-width: 600px) {
+  .box {
+    height: auto;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px; 
+  }
 }
 
 
