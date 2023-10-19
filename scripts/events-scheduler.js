@@ -18,8 +18,8 @@ function renderTodoList() {
       const { name, dueDate } = todoObject;
       const html = `
       <div class="box">
-        <div>${name}</div>
-        <div>${dueDate}</div> 
+        <div class-"event-name">${name}</div>
+        <div class="due-date">${dueDate}</div> 
     
           <button class="edit-todo-button js-edit-todo-button">Edit</button>
           <button class= "delete-todo-button js-delete-todo-button">Remove</button>

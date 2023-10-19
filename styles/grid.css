@@ -63,6 +63,18 @@
   width: 100%;
 }
 
+.edit-todo-button {
+  background-color: blue;
+  color: white;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+  width: 100%;
+}
+
 .js-todo-list {
   display: flex;
   flex-direction: row;
@@ -112,6 +124,7 @@
   .search-bar-container {
     height: auto;
     width: 99%;
+    overflow: hidden;
   }
 }
 
@@ -173,10 +186,16 @@ input[type="date"] {
   align-items: center;
   gap: 10px;
   background-color: white;
-  padding: 10px;
+  padding: 20px;
   border-radius: 10px;
   box-shadow: 5px 5px 5px rgba(0,0,0,.5);
 }
+
+.due-date {
+  color: gray;
+  padding-bottom: 8px;
+}
+
 
 @media (max-width: 600px) {
   .box {
