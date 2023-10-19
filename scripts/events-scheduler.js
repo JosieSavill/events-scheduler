@@ -12,7 +12,7 @@ renderTodoList();
 function renderTodoList() {
 
   let todoListHTML = '';
-
+// added edit todo button in box div
 
   todoList.forEach((todoObject, index) => {
       const { name, dueDate } = todoObject;
@@ -20,7 +20,8 @@ function renderTodoList() {
       <div class="box">
         <div>${name}</div>
         <div>${dueDate}</div> 
-   
+    
+          <button class="edit-todo-button js-edit-todo-button">Edit</button>
           <button class= "delete-todo-button js-delete-todo-button">Remove</button>
 
           </div>`;
@@ -39,9 +40,27 @@ function renderTodoList() {
       });
     });
 
+    // added below code for edit button
+    document.querySelectorAll('.js-edit-todo-button')
+    .forEach((editButton, index) => {
+      editButton.addEventListener('click', () => {
+        editTodo(index);
+      });
+    });
+  
    
 
 }
+
+// added function below for edit button
+function editTodo(index) {
+  const newName = prompt("Edit the todo name:", todoList[index].name);
+  if (newName !== null) {
+    todoList[index].name = newName;
+    renderTodoList();
+  }
+}
+
 
 document.querySelector('.js-add-todo-button')
   .addEventListener('click', () => {
@@ -83,3 +102,12 @@ function addTodo() {
 
 
 }
+
+function editTodo(index) {
+  const newName = prompt("Edit the todo name:", todoList[index].name);
+  if (newName !== null) {
+    todoList[index].name = newName;
+    renderTodoList();
+  }
+}
+
