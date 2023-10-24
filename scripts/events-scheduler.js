@@ -1,10 +1,14 @@
-const todoList = [{
-  name: 'make dinner',
-  dueDate: '2022-12-22'
-}, {
+const todoList = [ {
   name: 'wash dishes',
   dueDate: '2022-12-24'
-}];
+},{
+  name: 'make dinner',
+  dueDate: '2022-12-22'
+}
+];
+
+
+
 
 renderTodoList();
 
@@ -12,18 +16,48 @@ renderTodoList();
 function renderTodoList() {
 
   let todoListHTML = '';
-// added edit todo button in box div
+  // added edit todo button in box div
+  console.log(todoList);
+
+  todoList.sort((a,b)=>{
+
+    if (a.dueDate < b.dueDate) {
+      return -1;
+    } else if (a.dueDate > b.dueDate) {
+      return 1;
+    }
+    // a must be equal to b
+    return 0;
+
+  })
+
+
+
+
 
   todoList.forEach((todoObject, index) => {
       const { name, dueDate } = todoObject;
+
+      let myDate= new Date (dueDate);
+      let year = myDate.getFullYear();
+      let day = myDate.getDate();
+      let monthNum = myDate.getMonth(); //number month
+      var months = [ "Jan", "Feb", "Mar", "Apr", "May", "June",
+    "July", "Aug", "Sept", "Oct", "Nov", "Dec" ]; //label month
+
+
+
+
       const html = `
       <div class="box">
-        <div class-"event-name">${name}</div>
-        <div class="due-date">${dueDate}</div> 
-    
+      <div>
+        <div class="due-date">${months[monthNum - 1]} - ${day} - ${year}</div>
+        <div class="event-name">${name}</div> 
+        </div>
+        <div class="btn-row">
           <button class="edit-todo-button js-edit-todo-button">Edit</button>
           <button class= "delete-todo-button js-delete-todo-button">Remove</button>
-
+        </div>
           </div>`;
       todoListHTML += html;
   });

@@ -7,11 +7,10 @@
   justify-content: center;
   height: auto;
   width: 50%;
-  column-gap: 10px;
-  row-gap: 1px;
-  padding-left: 15%;
-  padding-right: 15%;
-  padding-bottom: 10px;
+  column-gap: 22px;
+  row-gap: 10px;
+  margin: 0 auto;
+
 }
 
 @media (max-width: 600px) {
@@ -38,7 +37,17 @@
   align-items: stretch;
 }
 
+.due-date {
+  font-size: 12.5px;
+  text-align: center;
+  padding-bottom: 10px;
+}
 
+.event-name{
+  font-size: 22px; 
+  padding-bottom: 8px;
+
+}
 
 .add-todo-button {
   background-color: green;
@@ -55,24 +64,24 @@
   background-color: darkred;
   color: white;
   border: none;
-  font-size: 14px;
+  font-size: 10px;
   cursor: pointer;
   padding-top: 5px;
   padding-bottom: 5px;
   border-radius: 5px;
-  width: 100%;
+  width: 40%;
 }
 
 .edit-todo-button {
   background-color: blue;
   color: white;
   border: none;
-  font-size: 14px;
+  font-size: 10px;
   cursor: pointer;
   padding-top: 5px;
   padding-bottom: 5px;
   border-radius: 5px;
-  width: 100%;
+  width: 40%;
 }
 
 .js-todo-list {
@@ -86,11 +95,11 @@
 
 
 .box{
-  
   display: flex;
   flex-direction: column;
   width: 30%;
   z-index: 3;
+  padding: 30px;
 }
 
 .input-row {
@@ -189,11 +198,20 @@ input[type="date"] {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 5px 5px 5px rgba(0,0,0,.5);
+  max-width: 147px;
 }
 
 .due-date {
   color: gray;
   padding-bottom: 8px;
+}
+
+.btn-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 
