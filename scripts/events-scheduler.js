@@ -43,7 +43,7 @@ function renderTodoList() {
       let day = myDate.getDate();
       let monthNum = myDate.getMonth(); //number month
       var months = [ "Jan", "Feb", "Mar", "Apr", "May", "June",
-    "July", "Aug", "Sept", "Oct", "Nov", "Dec" ]; //label month
+      "July", "Aug", "Sept", "Oct", "Nov", "Dec" ]; //label month
 
 
 
@@ -51,7 +51,7 @@ function renderTodoList() {
       const html = `
       <div class="box">
       <div>
-        <div class="due-date">${months[monthNum - 1]} - ${day} - ${year}</div>
+        <div class="due-date">${months[monthNum]} - ${day} - ${year}</div>
         <div class="event-name">${name}</div> 
         </div>
         <div class="btn-row">
