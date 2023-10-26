@@ -51,7 +51,7 @@ function renderTodoList() {
       const html = `
       <div class="box">
       <div>
-        <div class="due-date">${months[monthNum]} - ${day} - ${year}</div>
+        <div class="due-date">${incrementDay(myDate)}  ${year}</div>
         <div class="event-name">${name}</div> 
         </div>
         <div class="btn-row">
@@ -68,7 +68,17 @@ function renderTodoList() {
             </svg>
           </button>
         </div>
-          </div>`;
+        </div>`;
+
+      // added code below for increment day:
+      function incrementDay(date) {
+        // Create a new Date object to avoid modifying the original date
+        const nextDay = new Date(date);
+        nextDay.setDate(date.getDate() + 1);
+        return `${months[nextDay.getMonth()]} ${nextDay.getDate()}`;
+      }
+
+
       todoListHTML += html;
   });
   
