@@ -69,7 +69,7 @@
   padding-top: 5px;
   padding-bottom: 5px;
   border-radius: 5px;
-  width: 40%;
+  width: 30%;
 }
 
 .edit-todo-button {
@@ -81,7 +81,7 @@
   padding-top: 5px;
   padding-bottom: 5px;
   border-radius: 5px;
-  width: 40%;
+  width: 30%;
 }
 
 .js-todo-list {
@@ -89,10 +89,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  
 }
-
-
 
 .box{
   display: flex;
@@ -105,10 +102,10 @@
 .input-row {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  height: auto;
   width: 100%;
   max-width: 800px;
-  
-
 }
 
 .search-bar-container {
@@ -126,7 +123,6 @@
   column-gap: 0;
   overflow: hidden;
   box-shadow: 5px 5px 5px rgba(0,0,0,.5);
-  
 }
 
 @media (max-width: 600px) {
@@ -149,7 +145,7 @@
 
 .search-bar::placeholder {
   font-family: Roboto, Arial;
-  font-size: 20px;
+  font-size: 24px;
 }
 
 .search-button {
@@ -158,7 +154,7 @@
   border: none;
   border-radius: 0 20px 20px 0;
   border: none;
-  padding: 5%;
+  padding: 8%;
 }
 
 .search-icon {
@@ -178,15 +174,16 @@
     border-radius: 20px;
     border-width: 3px;
     padding-top: 0;
+    align-items: center;
     height: auto;
-    width: 100%;
+    width: 60%;
     column-gap: 0;
     padding: 8px;
     box-shadow: 5px 5px 5px rgba(0,0,0,.5);
 }
 
 input[type="date"] { 
-
+  padding-left: 15px;
   color: gray;
 }
 
@@ -202,8 +199,10 @@ input[type="date"] {
 }
 
 .due-date {
-  color: gray;
+  color: blue;
   padding-bottom: 8px;
+  font-family: lato;
+  
 }
 
 .btn-row {
