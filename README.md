@@ -9,7 +9,7 @@
 [Link Here](https://josiesavill.github.io/events-scheduler/)  
 
 
-![Desktop Img]("../../styles/images/event-desktop-updated.png) 
+![Desktop Img]("../../styles/images/eventsdesktop.png) 
 
-![Mobile View Img]("../../styles/images/event-mobile-updated.png) 
+![Mobile View Img]("../../styles/images/eventsmobile.png) 
 
