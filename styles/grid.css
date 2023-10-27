@@ -190,6 +190,11 @@
     
 }
 
+.due-date-input::placeholder {
+  font-family: Lato;
+  font-size: 26px;
+}
+
 input[type="date"] { 
   padding-left: 15px;
   color: blue;
