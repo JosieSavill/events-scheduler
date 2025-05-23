@@ -1,3 +1,8 @@
+setMode("darkmode"); // or "lightmode" or "automode"
+
+
+
+
 let currentDate = new Date();
         let selectedDate = null;
 
@@ -95,8 +100,18 @@ let currentDate = new Date();
   rotateQuote();
   setInterval(rotateQuote, 1000 * 60 * 2);
 
-function lightMode() {
 
-}
 
-  document.querySelector("#sun").addEventListener("click", lightMode)
+// 
+
+function setMode(mode) {
+    const body = document.body;
+    body.classList.remove("darkmode", "lightmode", "automode");
+    body.classList.add(mode);
+  }
+  
+  // Hook up buttons
+  document.getElementById("sun").addEventListener("click", () => setMode("lightmode"));
+  document.getElementById("moon").addEventListener("click", () => setMode("darkmode"));
+  document.getElementById("circle").addEventListener("click", () => setMode("automode"));
+  
