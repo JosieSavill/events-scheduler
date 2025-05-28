@@ -14,6 +14,20 @@
 ![Mobile View Img]("../../styles/images/eventsmobile.png) 
 
 
+
+gh pages work flow:
+
+//work on main
+git add -A
+git static
+git commit -m " "
+git checkout gh pages
+git merge main
+git push orig gh pages
+
+
+
+
 ### bootstrap js link: <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
 
 
