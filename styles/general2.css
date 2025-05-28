@@ -41,6 +41,10 @@ body.lightmode{
     background-repeat: no-repeat; /* Optional: prevents repeating */
     background-position: center; /* Optional: centers the image */
     color: #222; /* Dark text for readability */
+    .quote{
+        color: #222;
+        text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
    
 }
 
@@ -59,6 +63,10 @@ body.automode{
     background-size: cover;      /* Optional: scales image to cover the element */
     background-repeat: no-repeat; /* Optional: prevents repeating */
     background-position: center; /* Optional: centers the image */
+    .quote{
+        color: #222;
+        text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
 }
 
 .calendar {
