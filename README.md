@@ -313,6 +313,252 @@ function editTodo(index) {
   }
 }
 
+grid css:
+
+
+
+.todo-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: auto;
+  width: 90%;
+  column-gap: 22px;
+  row-gap: 10px;
+  margin: 0 auto;
+  padding-top: 0;
+
+}
+
+@media (max-width: 600px) {
+  .todo-grid  {
+    padding-top: 30px;
+    padding-left: 5%;
+  }
+}
+
+.todo-input-grid {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ height: auto;
+ width: 100%;
+ 
+ 
+}
+
+.name-input, 
+.due-date-input {
+  font-size: 30px;
+  padding: 6px;
+  align-items: stretch;
+}
+
+.due-date {
+  font-size: 12.5px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.event-name{
+  font-size: 26px; 
+  font-family: lato;
+  padding-bottom: 8px;
+  text-align: center;
+}
+
+.add-todo-button {
+  background-color: green;
+  color: white;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.delete-todo-button {
+  background-color: darkred;
+  color: white;
+  border: none;
+  font-size: 10px;
+  cursor: pointer;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+  width: 30%;
+}
+
+.edit-todo-button {
+  background-color: blue;
+  color: white;
+  border: none;
+  font-size: 10px;
+  cursor: pointer;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+  width: 30%;
+}
+
+.js-todo-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.box{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  z-index: 30;
+  padding: 30px;
+}
+
+.input-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: auto;
+  width: 100%;
+  max-width: 800px;
+  padding-bottom: 20px;
+  
+}
+
+.search-bar-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-self: center;
+  border: solid rgb(49, 47, 47);
+  border-radius: 20px;
+  border-width: 3px;
+  padding-top: 0;
+  height: auto;
+  width: 100%;
+  column-gap: 0;
+  overflow: hidden;
+  box-shadow: 5px 5px 5px rgba(0,0,0,.5);
+  
+  
+}
+
+@media (max-width: 600px) {
+  .search-bar-container {
+    height: auto;
+    width: 99%;
+    overflow: hidden;
+  }
+}
+
+.search-bar {
+  flex: 1;
+  height: auto;
+  padding-left: 5%;
+  font-size: 26px;
+  font-family: lato;
+  border-radius: 20px 0 0 20px;
+  border: none;
+  width: 0;
+  
+}
+
+.search-bar::placeholder {
+  font-family: Lato;
+  font-size: 26px;
+}
+
+.search-button {
+  height: auto;
+  width: 10%;
+  font-family: lato;
+  border: none;
+  border-radius: 0 20px 20px 0;
+  border: none;
+  padding: 8%;
+}
+
+.search-icon {
+  height: auto;
+  width: 100%;
+}
+
+.date,
+.js-due-date-input, 
+.due-date-input {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-self: center;
+    border: solid rgb(49, 47, 47);
+    border-radius: 20px;
+    border-width: 3px;
+    padding-top: 0;
+    align-items: center;
+    height: auto;
+    width: 60%;
+    column-gap: 0;
+    padding: 8px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,.5);
+    
+}
+
+
+
+
+
+
+
+
+
+input[type="date"] { 
+  padding-left: 15px;
+  color: blue;
+  font-size:  26px;
+  font-family: lato;
+}
+
+.box{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(0,0,0,.5);
+  max-width: 147px;
+}
+
+.due-date {
+  color: blue;
+  padding-bottom: 8px;
+  font-family: lato;
+  
+}
+
+.btn-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+
+@media (max-width: 600px) {
+  .box {
+    height: auto;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px; 
+  }
+}
+
+
 
 
 
