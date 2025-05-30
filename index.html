@@ -28,8 +28,8 @@
     
     
     <div class="dropdown  position-fixed bottom-10 end-0 ">
-      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-        Mode
+      <button id="mode" class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+       Dark Mode
       </button>
       <ul class="dropdown-menu">
         <li id="sun">
@@ -66,33 +66,33 @@
 
         
 
-        <div class="card d-none" style="width: 18rem;">
+        <div class="card d-none" style="width: 33%">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+            
+            <form action="">
+              <input id="datepicker" type="date">
+                <fieldset>
+                  <label for="">Title</label>
+                  <input type="text">
+                </fieldset>
+             
+                <fieldset>
+                  <label for="">Subtitle</label>
+                  <textarea id="story" name="story" rows="5" cols="33">
+                   Hello
+                    </textarea>
+                </fieldset>
+              
+
+            </form>
+            
+            <!-- <h5 class="card-title">Card title</h5>
             <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        
-            <!-- Calendar Dropdown Link -->
-            <div class="dropdown d-inline">
-              <a class="card-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Calendar
-              </a>
-              <div class="dropdown-menu p-3" style="min-width: 320px;">
-                <div class="calendar">
-                  <div class="calendar-header d-flex justify-content-between align-items-center mb-2">
-                    <button class="btn btn-sm btn-outline-primary" onclick="prevMonth()">Prev</button>
-                    <span id="month-year"></span>
-                    <button class="btn btn-sm btn-outline-primary" onclick="nextMonth()">Next</button>
-                  </div>
-                  <div class="calendar-grid" id="calendar-days" style="display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px;">
-                    <!-- Days populated by JavaScript -->
-                  </div>
-                </div>
-              </div>
-            </div>
-        
-            <!-- Second link remains -->
-            <a href="#" class="card-link">Another link</a>
+         -->
+
+            <button id="saveBtn" class="btn">Save</button>
+           
           </div>
         </div>
         
