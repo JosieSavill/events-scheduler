@@ -1,6 +1,11 @@
 setMode("darkmode"); // or "lightmode" or "automode"
 
+//add event btn
 
+document.getElementById('add-event-btn').addEventListener('click', function(event) {
+    event.preventDefault();
+    document.querySelector('.card').classList.remove('d-none')
+  } );
 
 
 let currentDate = new Date();
@@ -114,4 +119,14 @@ function setMode(mode) {
   document.getElementById("sun").addEventListener("click", () => setMode("lightmode"));
   document.getElementById("moon").addEventListener("click", () => setMode("darkmode"));
   document.getElementById("circle").addEventListener("click", () => setMode("automode"));
+
+  
+
+
+  
+
+
+
+
+  
   
